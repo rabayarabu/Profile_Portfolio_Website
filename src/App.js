@@ -14,12 +14,11 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 function App() {
   return (
     <>
-    <Greet name="rabu"/>
+    {/* <Greet name="rabu"/> */}
     <Router>
       <Routes>
-        <Route path="/" element={<Name />} />
-             <Route path="?instagram" element={<Instagram />}></Route>
-        <Route path="about" element={<About />}/>
+        <Route path="/" element={<Greet />} />
+        <Route path="name" element={<Name />}/>
         
       </Routes>
     </Router>
