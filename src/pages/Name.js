@@ -4,11 +4,12 @@ import './styles.css';
 
 
 class Name extends Component {
-    constructor(props){
-        super(props)
+    constructor(){
+        super()
         this.state = {
             name: '',
-            address: ''
+            address: '',
+            count: 0
         }
     }
     handleNameChange = (event) => {
@@ -28,9 +29,21 @@ class Name extends Component {
 
     }
     handleSubmit = event => {
-        alert('${this.state.name} ${this.state.address}')
+        alert(`${this.state.name} ${this.state.address}`)
+        event.preventDefault()
 
     }
+    increment() {
+        this.setState( 
+        {
+            count: this.state.count + 1
+        }, () => {
+            console.log('value', this.state.count)
+        } 
+        )
+        console.log(this.state.count)
+    }
+    
     render(){
         return(
             <form onSubmit={this.handleSubmit}>
@@ -45,7 +58,11 @@ class Name extends Component {
                 <textarea value={this.state.address}
                  onChange={this.handleAddressChange}/>
             </div>
-            <button type="">Submit</button>
+            <button type="submit">Submit</button>
+            <div>
+                count - {this.state.count}
+            </div>
+            <button onClick={() => this.increment()}>Increment</button>
         </form>
 
         )
