@@ -1,16 +1,15 @@
 import React from 'react';
 
 function Footer() {
+    const worklist = ['Hospital Management System', 'School Management System', 'Resturant Management System']
     return(
        <>
+           <div><h2>My WorkList:</h2></div>
            <div>
-            <p>rabu is a good girl!</p>
+            {
+                worklist.map(work => <h2>{work}</h2>)
+            }
            </div>
-  
-            {/* <div class="mask" aria-hidden="true">
-                <div class="mask__upper"></div>
-                <div class="mask__lower"></div>
-            </div> */}
             
         </>
     )
