@@ -3,8 +3,7 @@ import React from 'react';
 import Greet from './pages/Greet';
 import Name from './pages/Name';
 import Contact from './pages/Contact';
-import About from './pages/About';
-import Footer from './pages/footer';
+import Worklist from './pages/Worklist';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 
@@ -23,7 +22,7 @@ function App() {
       </Routes>
     </Router>
     <Contact />
-    <Footer />
+    <Worklist />
     
     </>
     
