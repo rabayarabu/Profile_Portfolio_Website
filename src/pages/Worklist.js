@@ -1,32 +1,26 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
 function Worklist() {
+    const isClicked = true ;
     const list = ['Hospital Management System', 'Resturant Management System']
-    
     const [worklist, setList] = useState(list)
-
-    const showList = () => {
-        console.log('list')
-        setList([...worklist, {id: list.index}])
-        
-
+    const showList = () => {    
+        setList([{worklist} ])
     }
-    
-    return(
-       <>
-           <div>
-               <button onClick={() => showList}>My WorkList</button></div>
-           <div>
-            <ul>
-            {
-                list.map(work => (<li key={list.index}>{work}</li>))}
-
-            </ul>
-                
-            
-           </div>
-            
-        </>
+    return (
+        <>
+            <div>
+              { isClicked ? (<button onClick={showList}>My WorkList</button>)
+               : (<div>
+                    <ul>
+                        {
+                            list.map(worklist => (<li key={worklist}>{worklist}</li>))
+                        }
+                    </ul>
+                </div>)
+                }
+            </div>
+       </>
     )
 }
 

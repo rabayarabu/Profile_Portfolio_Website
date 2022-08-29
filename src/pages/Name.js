@@ -50,38 +50,38 @@ class Name extends Component {
     }
 
     render() {
-        let message
-        if(this.state.isAged){
-            message = <div>Ammu</div>
-        }else {
-            message = <div>Ami</div>
-        }
-        return <div>{message}</div>
-        // return (
-        //     <form onSubmit={this.handleSubmit}>
-        //         <div>
-        //             <label>Name</label>
-        //             <input type="text"
-        //                 value={this.state.name}
-        //                 onChange={this.handleNameChange} />
-        //         </div>
-        //         <div>
-        //             <label>Address</label>
-        //             <textarea value={this.state.address}
-        //                 onChange={this.handleAddressChange} />
-        //         </div>
-        //         <button type="submit">Submit</button>
-        //         <div>
-        //             count - {this.state.count}
-        //         </div>
-        //         <button onClick={() => this.increment()}>Increment</button>
-        //         <div>
-        //             <button onClick={this.saveButton}>Save</button>
-        //         </div>
-        //     </form>
+        // let message
+        // if(this.state.isAged){
+        //     message = <div>Ammu</div>
+        // }else {
+        //     message = <div>Ami</div>
+        // }
+        // return <div>{message}</div>
+        return (
+            <form onSubmit={this.handleSubmit}>
+                <div>
+                    <label>Name</label>
+                    <input type="text"
+                        value={this.state.name}
+                        onChange={this.handleNameChange} />
+                </div>
+                <div>
+                    <label>Address</label>
+                    <textarea value={this.state.address}
+                        onChange={this.handleAddressChange} />
+                </div>
+                <button type="submit">Submit</button>
+                <div>
+                    count - {this.state.count}
+                </div>
+                <button onClick={() => this.increment()}>Increment</button>
+                <div>
+                    <button onClick={this.saveButton}>Save</button>
+                </div>
+            </form>
 
 
-        // )
+        )
     }
 
 }

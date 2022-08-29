@@ -5,23 +5,30 @@ import './styles.css';
 
 
 function Contact() {
+    const openTwitter = () => {
+        console.log('twitted')
+    }
+    const openInstagram = () => {
+        console.log('insta')
+    }
+    const openGithub = () => {
+        console.log('gitt')
+    }
     
     return(
-        <>
-        
-        
-        <div class="colophon">
-            <a href="http://twitter.com/@mrcthms" class="colophon__link">
-                <img src="assets/images/twitter.svg" width="64" alt="An icon for Twitter" class="colophon__image" />
-                <span class="colophon__text">Twitter</span>
+        <>       
+        <div className="colophon">
+            <a href="http://twitter.com/@mrcthms" className="colophon__link">
+                <img src="assets/images/twitter.svg" width="64" alt="An icon for Twitter" className="colophon__image" />
+                <span className="colophon__text"><button onClick={openTwitter}>Twitter</button></span>
             </a>
-            <a href="http://instagram.com/mrcthms" class="colophon__link">
-                <img src="assets/images/instagram.svg" width="64" alt="An icon for Instagram" class="colophon__image" />
-                <span class="colophon__text">Instagram</span>
+            <a href="http://instagram.com/mrcthms" className="colophon__link">
+                <img src="assets/images/instagram.svg" width="64" alt="An icon for Instagram" className="colophon__image" />
+                <span className="colophon__text"><button onClick={openInstagram}>Instagram</button></span>
             </a>
-            <a href="http://github.com/mrcthms" class="colophon__link">
-                <img src="assets/images/github.svg" width="64" alt="An icon for Github" class="colophon__image" />
-                <span class="colophon__text">Github</span>
+            <a href="http://github.com/mrcthms" className="colophon__link">
+                <img src="assets/images/github.svg" width="64" alt="An icon for Github" className="colophon__image" />
+                <span className="colophon__text"><button onClick={openGithub}>Github</button></span>
             </a>
         </div>
         <div className="[ grid__col grid__col--one-third align-left ]">
