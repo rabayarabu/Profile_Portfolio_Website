@@ -18,6 +18,7 @@ function Worklist() {
               { isClicked==false ? (<button onClick={()=>{setClicked(true)}}>My Worklist</button>)
                : (<div>
                     <ul>{listItems}</ul>
+                    <button onClick={()=>{setClicked(false)}}>Close List</button>
                  </div>)
                 }
             </div>

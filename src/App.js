@@ -17,12 +17,13 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Greet />} />
-        <Route path="name" element={<Name />}/>
+        {/* <Route path="name" element={<Name />}/> */}
         
       </Routes>
     </Router>
-    <Contact />
     <Worklist />
+    <Contact />
+    
     
     </>
     
