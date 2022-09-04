@@ -5,6 +5,7 @@ import Name from './pages/Name';
 import Contact from './pages/Contact';
 import Worklist from './pages/Worklist';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import NewHome from './pages/NewHome';
 
 
 
@@ -13,16 +14,17 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 function App() {
   return (
     <>
-    {/* <Greet name="rabu"/> */}
+    {/* <Greet name="rabu"/>
     <Router>
       <Routes>
-        <Route path="/" element={<Greet />} />
+        <Route path="/" element={<Greet />} /> */}
         {/* <Route path="name" element={<Name />}/> */}
         
-      </Routes>
+      {/* </Routes>
     </Router>
     <Worklist />
-    <Contact />
+    <Contact /> */}
+    <NewHome />
     
     
     </>

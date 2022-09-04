@@ -27,11 +27,11 @@ function Contact() {
                 <img src="assets/images/twitter.svg" width="64" alt="An icon for Twitter" className="colophon__image" />
                 <span className="colophon__text"><button  onClick={openTwitter}>Twitter</button></span>
             </a>
-            <a href={instaturl} className="colophon__link">
+            <a href={instaturl} className="colophon__link" target="_blank" rel="noopener noreferrer">
                 <img src="assets/images/instagram.svg" width="64" alt="An icon for Instagram" className="colophon__image" />
                 <span className="colophon__text"><button onClick={openInstagram}>Instagram</button></span>
             </a>
-            <a href={giturl} className="colophon__link">
+            <a href={giturl} className="colophon__link" target="_blank" rel="noopener noreferrer">
                 <img src="assets/images/github.svg" width="64" alt="An icon for Github" className="colophon__image" />
                 <span className="colophon__text"><button onClick={openGithub}>Github</button></span>
             </a>
