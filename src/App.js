@@ -5,28 +5,19 @@ import Name from './pages/Name';
 import Contact from './pages/Contact';
 import Worklist from './pages/Worklist';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import NewHome from './pages/NewHome';
-
-
-
-
 
 function App() {
   return (
     <>
-    {/* <Greet name="rabu"/>
+    
     <Router>
       <Routes>
-        <Route path="/" element={<Greet />} /> */}
-        {/* <Route path="name" element={<Name />}/> */}
-        
-      {/* </Routes>
+        <Route path="/" element={<Greet />} /> 
+        <Route path="name" element={<Name />}/>  
+     </Routes>
     </Router>
     <Worklist />
-    <Contact /> */}
-    <NewHome />
-    
-    
+    <Contact /> 
     </>
     
   );

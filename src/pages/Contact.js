@@ -1,11 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './styles.css';
 
-
-
-
 function Contact() {
-    const [state,setState]=useState(false);
+   
     let twitturl="http://twitter.com/@mrcthms"
     let instaturl="https://www.instagram.com/harley__qwinn/"
     let giturl="https://github.com/rabayarabu"
