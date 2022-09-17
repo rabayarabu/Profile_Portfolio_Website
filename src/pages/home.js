@@ -21,11 +21,11 @@ function Home() {
                         <header id="site_header" className="header mobile-menu-hide">
                             <div className="header-content">
                                 <div className="header-photo">
-                                    <img src="img/main_photo.jpg" alt="Alex Smith" />
+                                    <img src="img/profilePhoto.jpg" alt="" />
                                 </div>
                                 <div className="header-titles">
-                                    <h2>Alex Smith</h2>
-                                    <h4>Web Designer</h4>
+                                    <h2>Rabaya Rabu</h2>
+                                    <h4>Fontend Developer</h4>
                                 </div>
                             </div>
 
@@ -70,17 +70,17 @@ function Home() {
 
                             <div className="social-links">
                                 <ul>
-                                    <li><a href="#" target="_blank"><i className="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="#" target="_blank"><i className="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#" target="_blank"><i className="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/rabaya-rabu-142721169/" target="_blank"><i className="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="https://www.facebook.com/profile.php?id=100081193897180" target="_blank"><i className="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="https://github.com/rabayarabu" target="_blank"><i className="fab fa-twitter"></i></a></li>
                                 </ul>
                             </div>
 
                             <div className="header-buttons">
-                                <a href="#" target="_blank" className="btn btn-primary">Download CV</a>
+                            <a href="/js/rabaya_assignoholic.pdf" download>Download CV</a>
                             </div>
 
-                            <div className="copyrights">© 2020 All rights reserved.</div>
+                            {/* <div className="copyrights">© 2020 All rights reserved.</div> */}
                         </header>
 
 
@@ -105,10 +105,10 @@ function Home() {
                                         <div className="row">
                                             <div className="col-sm-12 col-md-12 col-lg-12">
                                                 <div className="title-block">
-                                                    <h2>Alex Smith</h2>
+                                                    <h2>Rabaya Rabu</h2>
                                                     <div className="owl-carousel text-rotation">
                                                         <div className="item">
-                                                            <div className="sp-subtitle">Web Designer</div>
+                                                            <div className="sp-subtitle">Programmer</div>
                                                         </div>
 
                                                         <div className="item">
