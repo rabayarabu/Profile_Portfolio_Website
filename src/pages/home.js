@@ -965,14 +965,14 @@ function Home() {
                                             <div className="col-xs-12 col-sm-4">
                                                 <div className="lm-info-block gray-default">
                                                     <i className="lnr lnr-map-marker"></i>
-                                                    <h4>San Francisco</h4>
+                                                    <h4>Dhaka</h4>
                                                     <span className="lm-info-block-value"></span>
                                                     <span className="lm-info-block-text"></span>
                                                 </div>
 
                                                 <div className="lm-info-block gray-default">
                                                     <i className="lnr lnr-phone-handset"></i>
-                                                    <h4>415-832-2000</h4>
+                                                    <h4>01766031275</h4>
                                                     <span className="lm-info-block-value"></span>
                                                     <span className="lm-info-block-text"></span>
                                                 </div>
